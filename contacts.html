@@ -1,0 +1,157 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" 
+         "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtm">
+
+<head>  
+      <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+      <title>Home</title>
+<style>
+#header{
+		position: relative;
+		height: 150px;
+		}
+#boxmenu {
+width: 99.5%;
+margin: 5px auto 0px auto;
+text-align: center;
+padding: 7px 0 8px 0;
+border-bottom: 2px solid #003300;
+border-top: 2px solid #003300;
+border-left: 2px solid #003300;
+border-right: 2px solid #003300;
+font-weight: bold;
+letter-spacing: 3px;
+text-transform: uppercase;
+font-family: serif;
+text-decoration: none;
+word-spacing: 50px;
+}
+#boxmenu ul {
+list-style: none;
+}
+#boxmenu li {
+display: inline-block;
+padding: 0 1.8%;
+}
+#boxmenu a {
+font-size: 1.2em;
+color: #006600;
+text-decoration: none;
+}
+#boxmenu a:hover{
+	color: #FF7519;
+}
+footer {
+   margin-left: 1px;
+   width: 99.1%;
+    background-color:#003300;
+    color:white;
+    clear:both;
+    text-align:center;
+    padding:5px;      
+}
+aside1{
+   margin-left: 1px;
+   line-height:30px;
+    background-color:#003300;
+    height: 360px;
+    width:1px;
+    float:left;
+    padding:5px;
+}
+aside2{
+   margin-right: 1px;
+   line-height:30px;
+    background-color:#003300;
+    height: 360px;
+    width: 1px;
+    float:right;
+    padding:5px;
+}
+
+#left
+    {
+      width: 300px;
+      float: left;
+      margin-left: 20px;
+      margin-top: 10px;
+      
+      color: #003300;
+    }
+#right
+    {
+      float: right;
+      width: 400px;
+      margin-right: 200px;
+      margin-top: 10px;
+      line-height: 
+.clear
+    {
+      clear: both;
+    }
+#map-canvas {
+        width: 500px;
+        height: 400px;
+      }
+</style>
+<script src="https://maps.googleapis.com/maps/api/js"></script>
+    <script>
+      function initialize() {
+        var mapCanvas = document.getElementById('map-canvas');
+        var mapOptions = {
+          center: new google.maps.LatLng(44.5403, -78.5463),
+          zoom: 8,
+          mapTypeId: google.maps.MapTypeId.ROADMAP
+        }
+        var map = new google.maps.Map(mapCanvas, mapOptions)
+      }
+      google.maps.event.addDomListener(window, 'load', initialize);
+    </script>
+</head>
+
+<body>
+<div id="header">
+	<img src="images/car1.jpg" alt="car №1" width="180px" height="120px" />
+	<img src="images/car2.jpg" alt="car №2" width="180px" height="120px" />
+	<a href="home.html"><img src="images/header.jpg" alt="header" width="600px" height="150px"></a>
+	<img src="images/car3.jpg" alt="car №1" width="180px" height="120px" />
+	<img src="images/car4.jpg" alt="car №1" width="180px" height="120px" />
+</div>
+<div id="boxmenu">
+   	<ul>
+      	<li><a href="home.html">About</a></li>
+      	<li><a href="vehicles.html">Vehicles</a></li>
+      	<li><a href="contacts.html">Contacts</a></li>
+      	
+   </ul>
+</div>
+<aside1></aside1>
+<aside2></aside2>
+
+<div id="container">
+   <div id="left">
+   <iframe src="https://www.google.com/maps/embed?pb=!1m22!1m12!1m3!1d630.1060450972193!2d-0.14252058147301552!3d50.82330647513081!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m7!1i0!3e6!4m3!3m2!1d50.8233726!2d-0.1420938!4m0!5e0!3m2!1sen!2s!4v1416674905409" width="400" height="350" frameborder="0" style="border:0"></iframe>
+   </div>
+ 
+
+   <div id="right">
+      <p style="margin-left: 20px"><em>1990 Ferrari F40, coachwork by Pininfarina</em></p>
+      <p style="margin-left: 20px">Chassis: VIN.ZFFMN34A2L0085596</p>
+      <p style="margin-left: 20px">Price: $1,200,000 - $1,400,000</p>
+      <h4 style="margin-left: 30px">Car specs &amp highlights:</h4>
+      <ul>
+        <li>One of 1,315 Examples Produced</li>
+        <li>Staggering Performance and Specifcations</li>
+        <li>Twin IHI Turbochargers with Behr Intercoolers</li>
+        <li>478 HP at 7,000 RPM</li>
+        <li>4-Wheel Cross-Drilled Hydraulic Disc Brakes</li>
+        <li>5-Speed Manual Gearbox and 4-Wheel Independent Double-Wishbone Suspension </li>
+   </div>
+</div>    
+<footer>
+Copyright Gooding &amp Company 
+</footer>
+</body>
+
+</html>
